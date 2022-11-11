@@ -2,24 +2,33 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
 }
-
-header{
+.headerbox{
+    display: flex;
+    background-color: orange;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#pops{
+    border: 4px solid red;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    border-radius: 100px;
+}
+header div{
     border: solid 2px transparent;
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-left: 25%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-image: linear-gradient( 359.8deg,  rgba(252,255,222,1) 2.2%, rgba(182,241,171,1) 99.3% );
+    justify-content: space-evenly;
 }
 
 header a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     border: solid 2px transparent;
-    padding: 8px;
+    padding: 10px;
     border-radius: 15px;
     background-color: yellow;
     color: red;
