@@ -1,0 +1,119 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
+}
+
+header{
+    border: solid 2px transparent;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 25%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: linear-gradient( 359.8deg,  rgba(252,255,222,1) 2.2%, rgba(182,241,171,1) 99.3% );
+}
+
+header a{
+    text-decoration: none;
+    font-size: 25px;
+    border: solid 2px transparent;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: yellow;
+    color: red;
+    transition: 0.4s all;
+}
+a:hover{
+    background-color: red;
+    color: yellow;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.lanches{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+h2{
+    font-size: 30px;
+    color: red;
+}
+.item{
+    background-color: white;
+    width: 85%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px dashed red;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.preco{
+    font-size: 30px;
+    transition: 0.4s all;
+    color: red;
+}
+
+.item img{
+    display: flex;
+    background-color: white;
+    width: 93%;
+    transition: 0.4s all;
+}
+.item img:hover{
+    width: 100%;
+}
+
+.bebidas{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+.item2{
+    width: 85%;
+    background-color: white;
+    border: 3px dashed red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.item2 img{
+    display: flex;
+    background-color: white;
+    width: 95%;
+    transition: 0.4s all;
+}
+.item2 img:hover{
+    width: 100%;
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    color:brown;
+}
+#ft{
+    font-size: 12px;
+}
