@@ -75,3 +75,25 @@ footer a:hover{
 #ft{
     font-size: 12px;
 }
+/*carrossel*/
+section.carrossel1{
+    overflow: hidden;
+    width: 800px;
+    height: 400px;
+    margin: 3em auto;
+    text-align: center;
+    border: 5px dashed red;
+    border-radius: 25px;
+}
+
+section.carrossel1 img{
+    object-fit: cover;
+    width: 800px;
+    height: 400px;
+}
+
+div.container1{
+    display: flex;
+    transform: translateX(0);
+    transition: .4s ease-in-out;
+}
