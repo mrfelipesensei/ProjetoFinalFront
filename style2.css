@@ -113,7 +113,6 @@ h2{
     width: 100%;
 }
 
-
 footer{
     text-align: center;
     margin-top: 30px;
@@ -127,4 +126,26 @@ footer a:hover{
 }
 #ft{
     font-size: 12px;
+}
+/*Botões*/
+.add{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: yellow;
+    color: red;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+.add:hover{
+    background-color: red;
+    color: yellow;
+}
+
+#btndrink{
+    padding: 8px;
+    margin-bottom: 5px;
 }
