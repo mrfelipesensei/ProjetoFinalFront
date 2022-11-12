@@ -30,3 +30,36 @@ var lanches = [
     {nome: 'Refrigerante Lata', valor: 5.00},
     {nome: 'Sucos Naturais', valor: 6.00}
 ]
+
+misto.addEventListener(`click`,()=>{
+    valorp = 4.00;
+    lanche.value = lanche[0].nome;
+})
+bomba.addEventListener(`click`,()=>{
+    valorp = 8.00;
+    lanche.value = lanche[1].nome;
+})
+xtudo.addEventListener(`click`,()=>{
+    valorp = 17.00;
+    lanche.value = lanche[2].nome;
+})
+xfrango.addEventListener(`click`,()=>{
+    valorp = 19.00;
+    lanche.value = lanche[3].nome;
+})
+xbrocado.addEventListener(`click`,()=>{
+    valorp = 25.00;
+    lanche.value = lanche[4].nome;
+})
+heineken.addEventListener(`click`,()=>{
+    valorp = 8.00;
+    lanche.value = lanche[5].nome;
+})
+refri.addEventListener(`click`,()=>{
+    valorp = 5.00;
+    lanche.value = lanche[6].nome;
+})
+suco.addEventListener(`click`,()=>{
+    valorp = 6.00;
+    lanche.value = lanche[7].nome;
+})
