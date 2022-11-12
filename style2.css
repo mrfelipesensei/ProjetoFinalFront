@@ -146,3 +146,28 @@ footer a:hover{
     color: yellow;
 }
 
+.modbox{
+    font-size: 20px;
+    width: 90%;
+    background-color: rgb(93, 237, 77);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+}
+#modal input{
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    outline: none;
+    border-radius: 1em;
+    border: none;
+    width: 90%;
+    text-align: center;
+}  
+#modal #qtd-lanche{
+    width: 45%;
+}

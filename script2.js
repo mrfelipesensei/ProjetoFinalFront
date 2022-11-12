@@ -69,8 +69,8 @@ addCarrinho.addEventListener(`click`,()=>{
     var opcao = lanche.value;
     totalLanche = qtd * valorp;
     
-    carrinho.innerHTML += `<p>${opcao} -- ${qtd} --R$${totalLanche}</p>`;
+    carrinho.innerHTML += `<p>${qtd} -- ${opcao} -- R$${totalLanche}</p>`;
 
     soma += totalLanche;
-    valorTotal.innerHTML = `<p>R$${soma}</p>`
+    valorTotal.innerHTML = `<p> Total: R$${soma}</p>`
 })
