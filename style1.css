@@ -1,10 +1,11 @@
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
+    background-color: whitesmoke;
 }
 .headerbox{
+    margin-top: -10px;
     display: flex;
-    background-color: orange;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -58,7 +59,7 @@ main img{
     width: 75%;
     display: block;
     margin: auto;
-    border-radius: 25px;
+    border-radius: 12px;
 }
 
 footer{
@@ -82,7 +83,7 @@ section.carrossel1{
     height: 400px;
     margin: 3em auto;
     text-align: center;
-    border: 5px dashed red;
+    border: 10px outset red;
     border-radius: 25px;
 }
 
