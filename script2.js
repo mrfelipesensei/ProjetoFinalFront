@@ -63,3 +63,14 @@ suco.addEventListener(`click`,()=>{
     valorp = 6.00;
     lanche.value = lanche[7].nome;
 })
+
+addCarrinho.addEventListener(`click`,()=>{
+    var qtd = Number(qtdLanche.value);
+    var opcao = lanche.value;
+    totalLanche = qtd * valorp;
+    
+    carrinho.innerHTML += `<p>${opcao} -- ${qtd} --R$${totalLanche}</p>`;
+
+    soma += totalLanche;
+    valorTotal.innerHTML = `<p>R$${soma}</p>`
+})
