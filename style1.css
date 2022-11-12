@@ -1,6 +1,6 @@
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: whitesmoke;
+    background: linear-gradient(180deg, rgba(255,246,195,1) 0%, rgba(234,132,12,1) 100%);
 }
 .headerbox{
     margin-top: -10px;
