@@ -7,6 +7,7 @@
     <title>Peça Já!</title>
     <link rel="shortcut icon" href="./imgs/icon.png">
     <link rel="stylesheet" href="style2.css">
+    <script src="script2.js" defer></script>
 </head>
 <body>
     <header class="headerbox">
@@ -25,35 +26,35 @@
                 <img src="./imgs/misto.jpg" alt="">
                 <p>Pão, Presunto e Queijo</p>
                 <p class="preco">R$ 4,00</p>
-                <button class="add" >Adicionar ao Carrinho</button>
+                <button class="add" id="misto">Adicionar ao Carrinho</button>
             </div>
             <div class="item">
                 <h2>Bomba</h2>
                 <img src="./imgs/bomba.jpg" alt="">
                 <p>Pão, Hambúrguer, Salsicha, Presunto, Queijo, Ovo, Alface e Tomate</p>
                 <p class="preco">R$ 8,00</p>
-                <button class="add" >Adicionar ao Carrinho</button>
+                <button class="add" id="bomba">Adicionar ao Carrinho</button>
             </div>
             <div class="item">
                 <h2>X-Tudo</h2>
                 <img src="./imgs/xtudo.jpg" alt="">
                 <p>Pão, Hambúrguer, Presunto, Queijo, Ovo, Batata-Palha, Milho e Bacon</p>
                 <p class="preco">R$ 17,00</p>
-                <button class="add" >Adicionar ao Carrinho</button>
+                <button class="add" id="xtudo">Adicionar ao Carrinho</button>
             </div>
             <div class="item">
                 <h2>X-Tudo de Frango</h2>
                 <img src="./imgs/xfrango.jpg" alt="">
                 <p>Pão, Peito de Frango, Salsicha, Presunto, Queijo, Milho, Bacon, Alface e Tomate</p>
                 <p class="preco">R$ 19,00</p>
-                <button class="add" >Adicionar ao Carrinho</button>
+                <button class="add" id="xfrango">Adicionar ao Carrinho</button>
             </div>
             <div class="item">
                 <h2>X-Brocado</h2>
                 <img src="./imgs/brocado.jpeg" alt="">
                 <p>Pão, 2 Hambúrguers, Salsicha, Presunto, Queijo, Milho e Bacon</p>
                 <p class="preco">R$ 25,00</p>
-                <button class="add" >Adicionar ao Carrinho</button>
+                <button class="add" id="xbrocado">Adicionar ao Carrinho</button>
             </div>
         </div>
         <h1>Bebidas</h1>
@@ -62,23 +63,44 @@
                 <h2>Heineken</h2>
                 <img src="./imgs/heinekein.jpg" alt="">
                 <p class="preco">R$ 8,00</p>
-                <button class="add" id="btndrink">Adicionar ao Carrinho</button>
+                <button class="add" id="heineken">Adicionar ao Carrinho</button>
             </div>
             <div class="item2">
                 <h2>Refrigerante Lata</h2>
                 <img src="./imgs/refris.png" alt="">
                 <p class="preco">$ 5,00</p>
-                <button class="add" id="btndrink">Adicionar ao Carrinho</button>
+                <button class="add" id="refri">Adicionar ao Carrinho</button>
             </div>
             <div class="item2">
                 <h2>Sucos Naturais</h2>
                 <img src="./imgs/suco.jpg" alt="">
                 <p>Maracujá, Laranja e Limão</p>
                 <p class="preco">R$ 6,00</p>
-                <button class="add" id="btndrink">Adicionar ao Carrinho</button>
+                <button class="add" id="suco">Adicionar ao Carrinho</button>
             </div>
         </div>
     </main>
+    <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <br>
+            <input type="text" id="lanche"></input> <br><br>
+            <input type="number" name="qtd" id="qtd-lanche">
+            <button id="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+        <div>
+            <div>
+                <div id="carrinho"></div>
+            </div>
+            <div>
+                <div id="quantidade"></div>
+            </div>
+            <div>
+                <div id="valor"></div>
+            </div>
+            <div>
+                <div id="valorTotal"></div>
+            </div>
+        </div>
     <footer>
         <a href="contato.html">
             <p id="fdev">&copy; Felipe Dev</p>

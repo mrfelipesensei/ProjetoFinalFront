@@ -139,13 +139,10 @@ footer a:hover{
     font-weight: bolder;
     cursor: pointer;
     transition: 0.4s all;
+    margin-bottom: 5px;
 }
 .add:hover{
     background-color: red;
     color: yellow;
 }
 
-#btndrink{
-    padding: 8px;
-    margin-bottom: 5px;
-}
