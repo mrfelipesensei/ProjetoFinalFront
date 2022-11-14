@@ -145,7 +145,32 @@ footer a:hover{
     background-color: red;
     color: yellow;
 }
-
+#continuarPedido, #fecharPedido{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: yellow;
+    color: red;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+#continuarPedido:hover{
+    background-color: red;
+    color: yellow;
+}
+#fecharPedido:hover{
+    background-color: red;
+    color: yellow;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+/*Modal*/
 #modal{
     font-size: 15px;
     width: 30%;

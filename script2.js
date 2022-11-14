@@ -83,8 +83,8 @@ addCarrinho.addEventListener(`click`,()=>{
     soma += totalLanche;
     valorTotal.innerHTML = `<p> Total: R$${soma}</p>`;
 
-    continuarPed.innerHTML = `<button>Continuar Pedindo</button>`;
-    fecharPedido.innerHTML = `<a href="finalped.html"><button>Concluir</button></a>`;
+    continuarPed.innerHTML = `<p>Continuar Pedindo</p>`;
+    fecharPedido.innerHTML = `<a href="finalped.html"><p>Concluir</p></a>`;
 
     continuarPed.addEventListener("click",()=>{
         toogleModal();
