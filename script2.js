@@ -78,4 +78,19 @@ addCarrinho.addEventListener(`click`,()=>{
 
     continuarPed.innerHTML = `<button>Continuar Pedindo</button>`;
     fecharPedido.innerHTML = `<button>Concluir</button>`
+});
+
+var abrirModal = document.querySelector(".abrir-modal");
+var fecharModal = document.querySelector(".fechar-modal");
+var fade = document.querySelector("#fade");
+var modal = document.querySelector("#modal");
+var eventos = [abrirModal,fade,fecharModal];
+
+const toogleModal = ()=>{
+    modal.classList.toggle('hide');
+    fade.classList.toggle('hide');
+}
+
+eventos.map((el)=>{
+    el.addEventListener("click",()=>toogleModal());
 })
