@@ -147,7 +147,7 @@ footer a:hover{
 }
 
 #modal{
-    font-size: 20px;
+    font-size: 15px;
     width: 30%;
     background-color: rgb(93, 237, 77);
     padding: 1em;
@@ -157,6 +157,9 @@ footer a:hover{
     color: black;
     border-radius: 15px;
     text-align: center;
+}
+#valorTotal{
+    font-size: 20px;
 }
 #add-carrinho{
     border-radius: 15px;
@@ -176,7 +179,6 @@ footer a:hover{
 #modal input{
     padding: 5px;
     font-size: 20px;
-    margin-top: 5px;
     outline: none;
     border-radius: 1em;
     border: none;

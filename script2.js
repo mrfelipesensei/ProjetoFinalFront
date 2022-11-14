@@ -17,7 +17,7 @@ var txtQuantidade = document.getElementById('quantidade');
 var valor = document.getElementById('valor');
 var valorTotal = document.getElementById('valorTotal');
 var continuarPed = document.getElementById('continuarPedido');
-var fecharPedido = document.getElementById('fecharPedido');
+var fecharPedido = document.querySelector('#fecharPedido');
 
 var soma = 0;
 var totalLanche = 0;
@@ -40,30 +40,37 @@ misto.addEventListener(`click`,()=>{
 bomba.addEventListener(`click`,()=>{
     valorp = 8.00;
     lanche.value = lanches[1].nome;
+    toogleModal();
 })
 xtudo.addEventListener(`click`,()=>{
     valorp = 17.00;
     lanche.value = lanches[2].nome;
+    toogleModal();
 })
 xfrango.addEventListener(`click`,()=>{
     valorp = 19.00;
     lanche.value = lanches[3].nome;
+    toogleModal();
 })
 xbrocado.addEventListener(`click`,()=>{
     valorp = 25.00;
     lanche.value = lanches[4].nome;
+    toogleModal();
 })
 heineken.addEventListener(`click`,()=>{
     valorp = 8.00;
     lanche.value = lanches[5].nome;
+    toogleModal();
 })
 refri.addEventListener(`click`,()=>{
     valorp = 5.00;
     lanche.value = lanches[6].nome;
+    toogleModal();
 })
 suco.addEventListener(`click`,()=>{
     valorp = 6.00;
     lanche.value = lanches[7].nome;
+    toogleModal();
 })
 
 addCarrinho.addEventListener(`click`,()=>{
@@ -77,10 +84,19 @@ addCarrinho.addEventListener(`click`,()=>{
     valorTotal.innerHTML = `<p> Total: R$${soma}</p>`;
 
     continuarPed.innerHTML = `<button>Continuar Pedindo</button>`;
-    fecharPedido.innerHTML = `<button>Concluir</button>`
+    fecharPedido.innerHTML = `<button>Concluir</button>`;
+
+    continuarPed.addEventListener("click",()=>{
+        toogleModal();
+    })
+
+    fecharPedido.addEventListener("click",()=>{
+        alert("Pedido Realizado com Sucesso!");
+        toogleModal();
+    })
 });
 
-var abrirModal = document.querySelector(".abrir-modal");
+var abrirModal = document.querySelector(".add");
 var fecharModal = document.querySelector(".fechar-modal");
 var fade = document.querySelector("#fade");
 var modal = document.querySelector("#modal");
@@ -94,3 +110,5 @@ const toogleModal = ()=>{
 eventos.map((el)=>{
     el.addEventListener("click",()=>toogleModal());
 })
+
+
