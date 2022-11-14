@@ -17,6 +17,7 @@ var txtQuantidade = document.getElementById('quantidade');
 var valor = document.getElementById('valor');
 var valorTotal = document.getElementById('valorTotal');
 var continuarPed = document.getElementById('continuarPedido');
+var limpaPed = document.getElementById('limpaPedido');
 var fecharPedido = document.querySelector('#fecharPedido');
 
 var soma = 0;
@@ -84,6 +85,7 @@ addCarrinho.addEventListener(`click`,()=>{
     valorTotal.innerHTML = `<p> Total: R$${soma}</p>`;
 
     continuarPed.innerHTML = `<p>Continuar Pedindo</p>`;
+    limpaPed.innerHTML = `<a href=pedidos.html><p>Limpar</p></a>`
     fecharPedido.innerHTML = `<a href="finalped.html"><p>Concluir</p></a>`;
 
     continuarPed.addEventListener("click",()=>{
