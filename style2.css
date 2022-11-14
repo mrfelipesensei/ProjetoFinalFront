@@ -158,6 +158,21 @@ footer a:hover{
     border-radius: 15px;
     text-align: center;
 }
+#add-carrinho{
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    background-color: yellow;
+    color: red;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+#add-carrinho:hover{
+    background-color: red;
+    color: yellow;
+}
 #modal input{
     padding: 5px;
     font-size: 20px;

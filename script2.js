@@ -16,6 +16,8 @@ var carrinho = document.getElementById('carrinho');
 var txtQuantidade = document.getElementById('quantidade');
 var valor = document.getElementById('valor');
 var valorTotal = document.getElementById('valorTotal');
+var continuarPed = document.getElementById('continuarPedido');
+var fecharPedido = document.getElementById('fecharPedido');
 
 var soma = 0;
 var totalLanche = 0;
@@ -72,5 +74,8 @@ addCarrinho.addEventListener(`click`,()=>{
     carrinho.innerHTML += `<p>${qtd} -- ${opcao} -- R$${totalLanche}</p>`;
 
     soma += totalLanche;
-    valorTotal.innerHTML = `<p> Total: R$${soma}</p>`
+    valorTotal.innerHTML = `<p> Total: R$${soma}</p>`;
+
+    continuarPed.innerHTML = `<button>Continuar Pedindo</button>`;
+    fecharPedido.innerHTML = `<button>Concluir</button>`
 })
