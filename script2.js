@@ -84,14 +84,9 @@ addCarrinho.addEventListener(`click`,()=>{
     valorTotal.innerHTML = `<p> Total: R$${soma}</p>`;
 
     continuarPed.innerHTML = `<button>Continuar Pedindo</button>`;
-    fecharPedido.innerHTML = `<button>Concluir</button>`;
+    fecharPedido.innerHTML = `<a href="finalped.html"><button>Concluir</button></a>`;
 
     continuarPed.addEventListener("click",()=>{
-        toogleModal();
-    })
-
-    fecharPedido.addEventListener("click",()=>{
-        alert("Pedido Realizado com Sucesso!");
         toogleModal();
     })
 });
