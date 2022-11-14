@@ -59,30 +59,35 @@
             <section class="modbox">
                 <div id="fade" class="hide"></div>
                 <div id="modal" class="hide">
-                    <br>
-                    <label for="lanche">Nome:</label>
-                    <input type="text" id="lanche" readonly></input> <br><br>
-                    <label for="qtd">Qtde:</label>
-                    <input type="number" name="qtd" id="qtd-lanche"> <br><br>
+                    <div class="data">
+                        <label for="lanche">Nome:</label>
+                        <input type="text" id="lanche" readonly></input><br>
+                        <label for="qtd">Qtde:</label>
+                        <input type="number" name="qtd" id="qtd-lanche"><br>
+                    </div>
                     <button id="add-carrinho">Adicionar Pedido</button>
                     <div>
-                        <div>
-                            <div id="carrinho"></div>
+                        <div class="pedinfo">
+                            <div>
+                                <div id="carrinho"></div>
+                            </div>
+                            <div>
+                                <div id="quantidade"></div>
+                            </div>
+                            <div>
+                                <div id="valor"></div>
+                            </div>
+                            <div>
+                                <div id="valorTotal"></div>
+                            </div>
                         </div>
-                        <div>
-                            <div id="quantidade"></div>
-                        </div>
-                        <div>
-                            <div id="valor"></div>
-                        </div>
-                        <div>
-                            <div id="valorTotal"></div>
-                        </div>
-                        <div>
-                            <div id="continuarPedido"></div>
-                        </div>
-                        <div>
-                            <div id="fecharPedido"></div>
+                        <div class="pedbtns">
+                            <div>
+                                <div id="continuarPedido"></div>
+                            </div>
+                            <div>
+                                <div id="fecharPedido"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
