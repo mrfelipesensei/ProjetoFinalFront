@@ -157,9 +157,11 @@ footer a:hover{
     font-weight: bolder;
     cursor: pointer;
     transition: 0.4s all;
+    margin-top: -37px;
 }
 #fecharPedido{
     margin-top: -40px;
+    margin-bottom: -30px;
 }
 #continuarPedido:hover{
     background-color: red;
@@ -197,14 +199,19 @@ a{
     margin-bottom: 5px;
 }
 .pedinfo{
+    margin-top: -6px;
+    line-height: 10px;
     font-size: 15px;
+    color: rgb(123, 23, 23);
 }
 .pedbtns{
     display: flex;
     gap: 10px;
 }
 #valorTotal{
-    font-size: 20px;
+    color: black;
+    margin-top: -15px;
+    font-size: 30px;
 }
 #add-carrinho{
     border-radius: 15px;
@@ -213,7 +220,7 @@ a{
     background-color: yellow;
     color: red;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
     transition: 0.4s all;
 }
