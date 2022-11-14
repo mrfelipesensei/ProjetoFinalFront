@@ -4,13 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pedido Realizado</title>
+    <link rel="shortcut icon" href="./imgs/final.png">
+    <style>
+        body{
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: linear-gradient(180deg, rgba(255,246,195,1) 0%, rgba(234,132,12,1) 100%);
+        }
+        h1{
+        text-align: center;
+        font-size: 50px;
+        color: red;
+        margin-top: 10px;
+        }
+        h2{
+        color: rgb(123, 23, 23);
+        font-size: 35px;
+        text-align: center;
+        }
+        .btns{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        }
+        button{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bolder;
+        border: solid 2px transparent;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: yellow;
+        color: red;
+        transition: 0.4s all;
+        cursor: pointer;
+        }
+        button:hover{
+            background-color: red;
+            color: yellow;
+        }
+        video{
+        margin-top: -30px;
+        margin-bottom: -30px;
+        border-radius: 20px;
+        }
+        #pops{
+        border: 4px solid red;
+        background-color: white;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 15px;
+        border-radius: 100px;
+        margin-top: -30px;
+        }
+        footer{
+        text-align: center;
+        margin-top: 30px;
+        }
+        footer a{
+        text-decoration: none;
+        color: black;
+        }
+        footer a:hover{
+        color:brown;
+        }
+        #ft{
+        font-size: 12px;
+        }
+    </style>
 </head>
 <body>
     <h1>Pedido Realizado com Sucesso!</h1>
-    <img src="" alt="">
+    <video width="320" height="240" autoplay muted loop>
+        <source src="./imgs/popeye.mp4" type="video/mp4">-->
+    </video>
     <h2>Obrigado pela Preferência</h2>
-    <div>
+    <img id="pops" src="./imgs/pops.png" alt="">
+    <div class="btns">
         <div>
             <a href="index.html">
                 <button>Voltar à Home</button>
@@ -22,5 +93,14 @@
             </a>
         </div>
     </div>
+    <footer>
+        <a href="contato.html">
+            <p id="fdev">&copy; Felipe Dev</p>
+        </a>
+        <p id="ft">As imagens contidas neste projeto têm fins meramente ilustrativos, portanto seus direitos são reservados aos respectivos autores</p>
+    </footer>
 </body>
 </html>
+<script>
+    document.querySelector('video').playbackRate = 0.5;
+</script>
