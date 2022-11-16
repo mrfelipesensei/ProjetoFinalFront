@@ -272,3 +272,16 @@ a{
     opacity: 0;
     pointer-events: none;
 }
+
+@media only screen and (max-width: 800px){
+    #modal{
+        width: 50%;
+    }
+    .preco{
+        font-size: 35px;
+    }
+    h2{
+        text-align: center;
+        font-size: 35px;
+    }
+}
